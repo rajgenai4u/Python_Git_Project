@@ -1,6 +1,4 @@
-cat <<EOT > .gitignore
 __pycache__/
 *.pyc
 .env
 .vscode/
-EOT
