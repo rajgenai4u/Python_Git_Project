@@ -35,7 +35,7 @@ Access: Learning Dashboard
  ID: 201
  Name: Parimala
  Email: parimala@gmail.com
-Role: Mentor
+Role : Mentor
 
  ID: 301
  Name: Ritik
@@ -56,27 +56,49 @@ Role: Admin
    - Created `main.py` to demonstrate the inheritance hierarchy.
 
 3. **First commit - `c1fd660` "Created base user class"**
-   - Added 6 files, 45 insertions.
+   - Changes: 6 files, 45 insertions(+)
+   - Files modified/added: `.gitignore`, `admin.py`, `main.py`, `mentor.py`, `student.py`, `user.py`
 
 4. **Enhancement - `e0da61d` "Added student dashboard access information"**
-   - Added "Access: Learning Dashboard" line to `student.py` (1 insertion).
+   - Changes: 1 file, 1 insertion(+)
+   - Modified: `student.py` - Added "Access: Learning Dashboard"
 
 5. **Bug fixes - `a7cf5a6` "fixed the erros in python files"**
-   - Fixed syntax errors across all Python files (7 insertions, 7 deletions):
-     - `user.py`: `init` -> `__init__`, fixed `f-string` quotes
+   - Changes: 5 files, 7 insertions(+), 7 deletions(-)
+   - Fixes applied:
+     - `user.py`: `init` → `__init__`, fixed f-string quotes
      - `student.py`: added missing colon after `class Student(User)`
-     - `mentor.py`: removed trailing colon on `from user import User`
-     - `admin.py`: replaced misplaced `print()` with correct indentation in `display_details`
-     - `main.py`: removed double comma (`301,,` -> `301,`)
-   - Verified with `python3 main.py` (runs successfully).
+     - `mentor.py`: removed trailing colon on import line
+     - `admin.py`: corrected indentation in `display_details`
+     - `main.py`: fixed syntax error (removed double comma `301,,`)
+   - Verified functionality with `python3 main.py` - runs successfully.
 
-6. **Push to GitHub**
-   - Pushed the `main` branch to `origin` at https://github.com/rajgenai4u/Python_Git_Project.
+6. **Documentation - `8b61114` "Added README documentation"**
+   - Changes: 1 file, 82 insertions(+)
+   - Added: Comprehensive `README.md` with project structure, usage, and operations.
+
+7. **Update .gitignore - `4b3a44a` "Updated .gitignore"**
+   - Changes: 1 file, 4 insertions(+), 2 deletions(-)
+   - Updated to properly include `__pycache__/` and `*.pyc`
+
+8. **Update Mentor - `1829645` "Updated Mentor file"**
+   - Changes: 1 file, 1 insertion(+), 3 deletions(-)
+   - Modified: `mentor.py` - minor formatting adjustment to print statement
 
 ## Git History
 
-| Commit   | Date       | Description                                    |
-|----------|------------|------------------------------------------------|
-| `c1fd660`| 2026-09-22 | Created base user class                        |
-| `e0da61d`| 2026-09-22 | Added student dashboard access information     |
-| `a7cf5a6`| 2026-09-22 | Fixed the errors in python files               |
+| Commit   | Date                | Description                                    |
+|----------|---------------------|------------------------------------------------|
+| `1829645`| 2026-09-22 13:51   | Updated Mentor file                            |
+| `4b3a44a`| 2026-09-22 13:49   | Updated .gitignore                             |
+| `8b61114`| 2026-09-22 13:40   | Added README documentation                     |
+| `a7cf5a6`| 2026-09-22 13:34   | fixed the erros in python files                |
+| `e0da61d`| 2026-09-22 13:19   | Added student dashboard access information     |
+| `c1fd660`| 2026-09-22 13:14   | Created base user class                        |
+
+## Final Status
+
+- All files are committed and pushed to remote repository
+- Working tree is clean
+- Code executes successfully with expected output
+- Repository URL: https://github.com/rajgenai4u/Python_Git_Project
