@@ -112,6 +112,51 @@ git push -u origin main
 git push origin main
 ```
 
+## Git Command Transcript (Demonstration)
+
+```bash
+# Initialize and add remote (if starting fresh)
+git init
+git remote add origin git@github.com:rajgenai4u/Python_Git_Project.git
+
+# Check current status
+git status
+# Output: On branch main, working tree clean
+
+# Check unstaged changes
+git diff
+# Output: (no changes when clean)
+
+# Stage files
+git add README.md
+git diff --staged
+# Shows staged changes for README.md
+
+# Commit
+git commit -m "Update README"
+
+# View commit history
+git log --oneline -10
+# Output: ad8023c Fix .gitignore content
+#          7a23f51 Add Git commands section with examples
+#          7c7eece Update README with complete operations and git history
+#          1829645 Updated Mentor file
+#          4b3a44a Updated .gitignore
+#          8b61114 Added README documentation
+#          a7cf5a6 fixed the erros in python files
+#          e0da61d Added student dashboard access information
+#          c1fd660 Created base user class
+
+# View full diff of a commit
+git show --stat ad8023c
+# Output: ad8023c Fix .gitignore content
+#          .gitignore | 1 insertion(+), 3 deletions(-)
+#          1 file changed, 1 insertion(+), 3 deletions(-)
+
+# Push to GitHub
+git push origin main
+```
+
 ## Git History
 
 | Commit   | Date                | Description                                    |
