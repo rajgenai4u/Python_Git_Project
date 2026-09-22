@@ -1,4 +1,4 @@
-from user import User:
+from user import User
 
 class Mentor(User):
     def display_details(self):

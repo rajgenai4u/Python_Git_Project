@@ -4,7 +4,7 @@ from admin import Admin
 users = [
     Student(101, "Rajesh", "rajesh@gmail.com"),
     Mentor(201, "Parimala", "parimala@gmail.com"),
-    Admin(301,, "Ritik", "ritik@gmail.com")
+    Admin(301, "Ritik", "ritik@gmail.com")
 ]
 
 for user in users:
