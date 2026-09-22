@@ -85,6 +85,33 @@ Role: Admin
    - Changes: 1 file, 1 insertion(+), 3 deletions(-)
    - Modified: `mentor.py` - minor formatting adjustment to print statement
 
+## Git Commands Used
+
+```bash
+# Repository initialization
+git init
+git remote add origin git@github.com:rajgenai4u/Python_Git_Project.git
+
+# Check status and changes
+git status
+git diff
+git diff --staged
+
+# Stage and commit changes
+git add .
+git add <specific-file>
+git commit -m "commit message"
+
+# View history
+git log --oneline
+git log --pretty=format:"%h | %ad | %s" --date=format:"%Y-%m-%d %H:%M"
+git log --stat --pretty=format:"%h | %s"
+
+# Push to remote
+git push -u origin main
+git push origin main
+```
+
 ## Git History
 
 | Commit   | Date                | Description                                    |
@@ -95,6 +122,7 @@ Role: Admin
 | `a7cf5a6`| 2026-09-22 13:34   | fixed the erros in python files                |
 | `e0da61d`| 2026-09-22 13:19   | Added student dashboard access information     |
 | `c1fd660`| 2026-09-22 13:14   | Created base user class                        |
+| `7c7eece`| 2026-09-22 13:53   | Update README with complete operations and git history |
 
 ## Final Status
 
